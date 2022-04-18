@@ -1,0 +1,278 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Anek Tamil', sans-serif;
+  background-color: #dddddd;
+  color: rgb(0,0,0,1);
+}
+
+div#interface {
+  width: 900px;
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  padding: 10px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+  position: absolute;
+  left: 900px;
+  top: 40px;
+}
+
+header#cabecalho {
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+  background: url(../_imagens/glass-logo-peq.jpg) no-repeat -5px 95px;
+}
+
+header#cabecalho h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15pt;
+  color: #888888;
+  padding: 0px;
+  margin-top: -4px;
+  margin-left: 4px;
+}
+
+/* Formatação de imagens com legenda */
+
+figure.foto-legenda {
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+  width: 100%;
+  height: 100%
+}
+
+figure.foto-legenda figcaption {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+  opacity: 1;
+}
+
+video#video01 {
+  width: 500px;
+  height: 400px;
+  margin-top: -100px;
+}
+
+video#video02 {
+  width: 350px;
+}
+
+/* Formatação do menu */
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  font-size: 13pt;
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 0px;
+  top: -21px;
+  background-color: #dddddd;
+  left: 668px;
+}
+
+nav#menu li {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 11pt;
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+  margin: 2px;
+}
+
+nav#menu li:hover{
+  transform: scale(1.15,1.15);
+}
+
+nav#menu h1 {
+  display: none;
+}
+
+nav#menu a {
+  color: black;
+  text-decoration: none;
+}
+
+nav#menu a:hover{
+  color: #888888;
+}
+
+section#corpo {
+  display: block;
+  width: 500px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 15px;
+}
+
+section#corpo a {
+  text-decoration: none;
+  color: #606060;
+}
+
+section#corpo a:hover {
+  text-decoration: underline;
+}
+
+article#artigo-principal h2 {
+  font-size: 14pt;
+  color: #606060;
+  background-color: #dddddd;
+  padding: 5px 0px 5px 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+  font-family: 'Kanit', sans-serif;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  font-size: 25pt;
+  color: #606060;
+  margin-bottom: 0px;
+  margin-top: -12px;
+}
+
+header#cabecalho-artigo h2 {
+  font-size: 13pt;
+  color: #cecece;
+  background-color: #ffffff;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+header#cabecalho-artigo h3 {
+  font-size: 9pt;
+  color: #606060;
+}
+
+header#cabecalho-artigo h3.direita {
+  text-align: right;
+  margin-bottom: -10px;
+}
+
+table#tabela {
+  border: 1px solid #606060;
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table#tabela td {
+  border: 1px solid #606060;
+  padding: 10px;
+}
+
+table#tabela td.ce{
+  text-align: right;
+  color: #ffffff;
+  background-color: #606060;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+table#tabela td.cd {
+  text-align: left;
+  background-color: #cecece;
+}
+
+table#tabela caption {
+  color: #888888;
+  font-size: 13pt;
+  font-family: 'Anek Tamil', sans-serif;
+  font-weight: bolder;
+}
+
+table#tabela caption span {
+  display: block;
+  float: right;
+  font-size: 8pt;
+  color: #000000;
+  margin-top: 10px;
+}
+
+aside#lateral {
+  display: block;
+  width: 350px;
+  float: right;
+  background-color: #dddddd;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 25pt;
+  color: #606060;
+  margin-top: -10px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+aside#lateral h2 {
+  background-color: #606060;
+  font-size: 12pt;
+  color: #ffffff;
+  padding: 5px;
+}
+
+footer#rodape {
+  clear: both;
+  border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+footer#rodape a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer#rodape a:hover {
+  color: #606060;
+}
